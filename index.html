@@ -33,13 +33,73 @@
                      <li class="addr-item"><a class="addr-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                  </ul>
              </address>
+             
+             <button class="burger-btn" type="button">
+                <svg class="burger-icon" width="24" height="24">
+                    <use xlink:href="./images/icons-1.svg#icon-heroicons-solid_menu"></use>
+                </svg>
+             </button>
+         </div>
+         <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button class="mobile-button-close">
+                    <svg class="exit-icon-menu" width="8" height="8">
+                        <use href="./images/icons-1.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-item"><a class="mobile-nav-item-link" href="./index.html">Studio</a></li>
+                        <li class="mobile-nav-item"><a class="mobile-nav-item-link" href="">Portfolio</a></li>
+                        <li class="mobile-nav-item"><a class="mobile-nav-item-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+            <address class="mobile-addr">
+                <ul class="mobile-addr-list">
+                    <li class="mobile-addr-item"><a class="mobile-addr-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="mobile-addr-item"><a class="mobile-addr-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <div>
+                <ul class="menu-social-list">
+                    <li class="menu-social-item-link">
+                            <a href="#" class="svg-menu">
+                                <svg class="icons-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-social-item-link">
+                            <a href="#" class="svg-menu">
+                                <svg class="icons-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-social-item-link">
+                            <a href="#" class="svg-menu">
+                                <svg class="icons-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-social-item-link">
+                            <a href="#" class="svg-menu">
+                                <svg class="icons-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
          </div>
      </header>
     
      <main>
 
      <!-- ============ Hero ============== -->
-         <section class="hero">
+         <section class="hero section">
              <div class="container hero-container">
                  <h1 class="hero-title">
                     Effective Solutions
@@ -109,7 +169,7 @@
                          <li class="team-list-item">
                              <img src="./images/mark-guerrero.jpg" alt="Mark Guerrero avatar" width="264" />
                                  <div class="container-item">
-                                     <h3 class="tit">Mark Guerrero</h3>
+                                     <h3 class="tit-team">Mark Guerrero</h3>
                                          <p class="text">Product Designer</p>                
                                          <ul class="icons-list">
                                              <li class="icons-link">
@@ -147,7 +207,7 @@
                          <li class="team-list-item">
                              <img src="./images/tom-ford.jpg" alt="Tom Ford avatar" width="264" />
                                  <div class="container-item">
-                                     <h3 class="tit">Tom Ford</h3>
+                                     <h3 class="tit-team">Tom Ford</h3>
                                          <p class="text">Frontend Developer</p>
                                          <ul class="icons-list">
                                          <li class="icons-link">
@@ -185,7 +245,7 @@
                          <li class="team-list-item">
                              <img src="./images/camila-garcia.jpg" alt="Camila Garcia avatar" width="264" />
                                  <div class="container-item">
-                                     <h3 class="tit">Camila Garcia</h3>
+                                     <h3 class="tit-team">Camila Garcia</h3>
                                          <p class="text">Marketing</p>
                                          <ul class="icons-list">
                                          <li class="icons-link">
@@ -223,7 +283,7 @@
                          <li class="team-list-item">
                              <img src="./images/daniel-wilson.jpg" alt="Daniel Wilson avatar" width="264" />
                                  <div class="container-item">
-                                     <h3 class="tit">Daniel Wilson</h3>
+                                     <h3 class="tit-team">Daniel Wilson</h3>
                                          <p class="text">UI Designer</p>
                                          <ul class="icons-list">
                                          <li class="icons-link">
@@ -408,7 +468,7 @@
          </div>
      </footer>
 
-     <div class="backdrop is-open">
+     <div class="backdrop hidden">
          <div class="modal">
              <button type="button" class="exit-button">
                  <svg class="exit-icon" width="8" height="8">
