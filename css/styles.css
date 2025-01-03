@@ -382,7 +382,9 @@ section.hero {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/Dark-bg-mobile.jpg);
+        url(../images/Dark-bg-mobile.jpg),
+        url(../images/Dark-bg-mobile-2x.jpg)
+        ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -482,7 +484,7 @@ section.hero {
 
           /* #region Benefits*/
 
-.section {
+.section-container {
     padding: 96px 0;
 }
 
@@ -523,7 +525,7 @@ section.hero {
 }
 
 @media screen and (min-width:768px) {
-  .section {
+  .section-container {
     padding: 96px 0;
   }
 
@@ -536,7 +538,7 @@ section.hero {
     }
 
   .benef-list-item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
    }
    .tit {
     display: inline-block;
@@ -544,7 +546,7 @@ section.hero {
 }
 
 @media screen and (min-width:1158px) {
-  .section {
+  .section-container {
     padding: 120px 0;
     }
 
@@ -611,6 +613,7 @@ section.hero {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 72px;
 }
 
@@ -647,7 +650,6 @@ section.hero {
     align-items: center;
     flex-direction: row;
     gap: 24px;
-    margin: 32px 0;
     height: 40px;
 }
 
@@ -789,7 +791,7 @@ section.hero {
     row-gap: 72px;
     }
   .portfolio-list-item {
-     width: calc((100% - 4 * 24px) / 2);
+     width: calc((100% - 1 * 24px) / 2);
    }
 }
 
@@ -821,6 +823,9 @@ section.hero {
     align-items: baseline;
 }
 
+/*.footer-container {
+    margin-bottom: 72px;
+}*/
 footer .logo {
     display: block;
     text-align: center;
@@ -840,7 +845,6 @@ footer .logo-style {
     line-height: 1.5;
     color: #f4f4fd;
     width: 288px;
-    margin-bottom: 72px;
 }
 
 .social-container {
@@ -848,7 +852,7 @@ footer .logo-style {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 72px;
+    /*margin-bottom: 72px;*/
 }
 
 .social-text {
@@ -961,8 +965,7 @@ footer .logo-style {
      max-width: 768px;
      padding-top: 96px;
      padding-bottom: 96px;
-     padding-left: 108px;
-    }
+     }
     
   .footers-container {
      display: flex;
@@ -1019,7 +1022,9 @@ footer .logo-style {
    flex-wrap: nowrap;
     align-items: baseline;
     width: 100%;
-}
+    margin-bottom: 0px;
+  
+  }
 
   .footer-container {
      margin-right: 120px;
